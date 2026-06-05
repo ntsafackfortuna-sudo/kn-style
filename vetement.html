@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VETEMENT</title>
+    <link rel="stylesheet" href="vetement.css">
+</head>
+<body>
+
+    <nav>
+ <div>
+
+            <a href="index.html">Accueil</a>
+
+            <a href="produit.html" class="active">Produits</a>
+
+            <a href="apropos.html">À propos</a>
+
+            <a href="inscription.html">Inscription</a>
+
+        </div>
+    </nav>
+    
+
+    <h1> KN STYLE</h1>
+
+    
+
+   <section class="catalogue">
+
+    <h2>NOS VETEMENTS TRADITIONNELS</h2>
+
+    <div class="produit">
+        <img src="images/vetement4.jpg" alt="vetement">
+        <p> Magnifique tenue traditionnelle de l'ouest cameroun alliant authenticitén élégance, et héritage culturel, parfaite pour toutes les grandes occasions</p>
+        <h3> 500 000 FCFA</h3>
+        <a href="https://wa.me/237672307496?text=Bonjour%2C%20je%20veux%20un%20article%20chez%20KN%20STYLE" target="_blank">
+    <button>Commander</button>
+</a>
+        </div>
+
+        <div class="produit">
+        <img src="images/vetement8.jpg" alt="vetement">
+        <p> Découvrez l'élégance des traditions à travers cette tenue authentique , conçue pour mettre en valeur la richesse culturelle et le charme africain</p>
+        <h3> 200 000 FCFA</h3>
+        <a href="https://wa.me/237672307496?text=Bonjour%2C%20je%20veux%20un%20article%20chez%20KN%20STYLE" target="_blank">
+    <button>Commander</button>
+</a>    
+        </div>
+        
+        <br>
+        <div class="produit">
+            <img src="images/vetement3.jpg" alt="vetement">
+            <p> Affirmez votre identité culturelle avec cette élégante tenue traditionnelle sawa, conçue pour mettre en valeur le charme et le prestige de l'homme camerounais </p>
+
+            <h3> 50 000 FCFA</h3>
+        
+<a href="https://wa.me/237672307496?text=Bonjour%2C%20je%20veux%20un%20article%20chez%20KN%20STYLE" target="_blank">
+    <button>Commander</button>
+</a>
+        </div>
+
+        <div class="produit">
+     <img src="images/vetement5.jpg" alt="vetement">
+     <p> Affichez votre complicité avec cette superbe tenue traditionnelle de couple, une parfaite alliance entre élégance moderne et richesses des traditions Africaines</p>
+     <h3> 1 200 000 FCFA</h3>
+      <a href="https://wa.me/237672307496?text=Bonjour%2C%20je%20veux%20un%20article%20chez%20KN%20STYLE" target="_blank">
+    <button>Commander</button>
+</a>
+        </div>
+
+        <br>
+
+        <div class="produit">
+            <img src="images/vetement traditionnel couple.jpg" alt="vetement">
+            <p> Tenues traditionnelles modernes, élégantes et chics, idéale pour cérémonies et grandes occasions </p>
+            <h3> 3 000 000 FCFA</h3>
+             <a href="https://wa.me/237672307496?text=Bonjour%2C%20je%20veux%20un%20article%20chez%20KN%20STYLE" target="_blank">
+    <button>Commander</button>
+</a>
+
+        </div>
+
+        <div class="produit">
+            <img src="images/vetement7.jpg" alt="vetement">
+            <p> Faites découvrir à votre enfant la beauté de nos traditions avec cette élégante tenue traditionnelle, alliant authenticité, confort et charme Africain</p>
+            <h3>25 000 FCFA</h3>
+             <a href="https://wa.me/237672307496?text=Bonjour%2C%20je%20veux%20un%20article%20chez%20KN%20STYLE" target="_blank">
+    <button>Commander</button>
+</a>
+
+        </div>
+
+        <button onclick="history.back()">
+     Retour
+</button>
+
+</div>
+<script>
+
+window.onload = function() {
+
+    let recherche = localStorage.getItem("rechercheProduit");
+
+    if(recherche) {
+
+        recherche = recherche.toLowerCase();
+
+        let vetements = document.querySelectorAll(".produit");
+
+        vetements.forEach(function(vet) {
+
+            let texte = vet.textContent.toLowerCase();
+
+            if(texte.includes(recherche)) {
+                vet.style.display = "block";
+            } else {
+                vet.style.display = "none";
+            }
+
+        });
+
+        localStorage.removeItem("rechercheProduit");
+    }
+}
+
+</script>
+</body>
+</html>

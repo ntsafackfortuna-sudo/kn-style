@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscription</title>
+
+    <link rel="stylesheet" href="inscription.css">
+
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <nav>
+    <h2> KN STYLE</h2>
+</nav>
+<nav class="navbar">
+    <div class="logo">KN STYLE</div>
+
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produit.html">Produits</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="inscription.html" class="active">Inscription</a></li>
+    </ul>
+</nav>
+
+
+    <!-- SECTION INSCRIPTION -->
+
+    <section class="section-inscription">
+
+        <div class="boite-inscription">
+
+            <h1>Créer un compte</h1>
+
+            <p>
+                Rejoignez notre communauté élégante.
+            </p>
+
+            <!-- FORMULAIRE -->
+
+            <form id="formulaire">
+
+                <!-- NOM -->
+
+                <label>Nom complet</label>
+
+                <input
+                    type="text"
+                    id="nom"
+                    placeholder="Entrez votre nom"
+                    required>
+
+                <!-- EMAIL -->
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Entrez votre email"
+                    required>
+
+                <!-- TELEPHONE -->
+
+                <label>Téléphone</label>
+
+                <input
+                    type="tel"
+                    id="telephone"
+                    placeholder="Entrez votre numéro"
+                    required>
+
+                <!-- VILLE -->
+
+                <label>Ville</label>
+
+                <input
+                    type="text"
+                    id="ville"
+                    placeholder="Votre ville"
+                    required>
+
+                <!-- MOT DE PASSE -->
+
+                <label>Mot de passe</label>
+
+                <input
+                    type="password"
+                    id="motdepasse"
+                    placeholder="Votre mot de passe"
+                    required>
+
+                <!-- BOUTON -->
+
+                <button type="submit">
+
+                    S'inscrire
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <p id="message">
+    </p>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 KN STYLE
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+   <script>
+document.getElementById("formulaire").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    document.getElementById("message").innerHTML = 
+    "Inscription réussie! Merci de votre confiance"
+
+     window.location.href = "index.html";
+
+    // récupération des données
+    let nom = document.getElementById("nom").value;
+    let telephone = document.getElementById("telephone").value;
+
+    // message de confirmation
+    alert("Inscription réussie 🎉");
+
+    // message WhatsApp
+    let message = "Bonjour " + nom + ", vous faites maintenant partie de la communauté KN STYLE 🎉";
+
+    // lien WhatsApp
+    let url = "https://wa.me/" + telephone + "?text=" + encodeURIComponent(message);
+
+    // ouverture WhatsApp
+    window.open(url, "_blank");
+
+    // reset formulaire (optionnel)
+    document.getElementById("formulaire").reset();
+    window.location.href = "index.html";
+
+});
+</script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+/* STYLE GENERAL */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#FFF8E7;
+    color:#333;
+    line-height:1.8;
+}
+
+/* MENU */
+
+nav{
+    text-align: right;
+    color: purple;
+    font-size: 20px;
+}
+
+nav a{
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+}
+
+nav a.active{
+     color: blue;
+    font-weight: bold;
+}
+   
+
+/* TITRE */
+
+.titre-apropos{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(rgba(128,0,128,0.8),
+    rgba(128,0,128,0.8)),
+    url("images/vetement6.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.titre-apropos h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.titre-apropos p{
+    font-size:1.2rem;
+}
+
+/* HISTOIRE */
+
+.histoire{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:80px 10%;
+    flex-wrap:wrap;
+}
+
+.image-histoire img{
+    width:400px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.texte-histoire{
+    max-width:550px;
+}
+
+.texte-histoire h2{
+    color:purple;
+    margin-bottom:20px;
+}
+
+/* VALEURS */
+
+.valeurs{
+    text-align:center;
+    padding:80px 10%;
+}
+
+.valeurs h2{
+    color:purple;
+    margin-bottom:40px;
+}
+
+.boites-valeurs{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.valeur{
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.valeur h3{
+    color:purple;
+    margin-bottom:15px;
+}
+
+
+
+
+/* POURQUOI NOUS CHOISIR */
+
+.choix ul{
+    list-style:none;
+    max-width:700px;
+    margin:auto;
+}
+
+.choix li{
+    background:white;
+    margin:15px 0;
+    padding:15px;
+    border-left:5px solid #D4AF37;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* MISSION */
+
+.mission{
+    background:white;
+    border-radius:20px;
+    width:85%;
+    margin:auto;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* VIDEO */
+
+.video-presentation{
+    text-align:center;
+}
+
+.video-presentation video{
+    width:100%;
+    max-width:800px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+    background:white;
+    border-radius:20px;
+    margin:40px auto;
+    width:85%;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* AVIS CLIENTS */
+
+.avis{
+    background:#F9F5FF;
+}
+
+.avis-client{
+    background:white;
+    max-width:700px;
+    margin:20px auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* TEMOIGNAGES */
+
+.temoignages blockquote{
+    background:white;
+    max-width:800px;
+    margin:25px auto;
+    padding:25px;
+    border-left:6px solid #D4AF37;
+    border-radius:15px;
+    font-style:italic;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* NOTATION */
+
+.notation{
+    text-align:center;
+}
+
+.notation form{
+    background:white;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.notation textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    resize:none;
+}
+
+.notation button{
+    background:#6A0DAD;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.notation button:hover{
+    background:#D4AF37;
+}
+
+/* FOOTER */
+
+footer{
+    background:#6A0DAD;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+footer p{
+    font-size:1.1rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav div{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .titre-apropos h1{
+        font-size:2.2rem;
+    }
+
+    section{
+        padding:50px 5%;
+    }
+}

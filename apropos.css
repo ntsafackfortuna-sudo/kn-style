@@ -1,0 +1,156 @@
+nav{
+    text-align: right;
+}
+
+/* TITRE A PROPOS */
+
+.titre-apropos{
+
+    text-align:center;
+
+    padding:60px 20px;
+}
+
+.titre-apropos h1{
+
+    font-size:50px;
+
+    color:purple;
+
+    margin-bottom:15px;
+}
+ 
+/* HISTOIRE */
+
+.histoire{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:50px;
+
+    gap:50px;
+}
+
+/* IMAGE */
+
+.image-histoire img{
+
+    width:450px;
+
+    border-radius:20px;
+}
+
+/* TEXTE */
+
+.texte-histoire{
+
+    width:50%;
+}
+
+.texte-histoire h2{
+
+    color:purple;
+
+    margin-bottom:20px;
+}
+
+.texte-histoire p{
+    display: flex;
+
+    align-items: center;
+
+    margin: bottom 20px;;
+
+    line-height:1.8;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    max-width: 500px;
+
+    margin-top: 30px;
+}
+
+/* VALEURS */
+
+.valeurs{
+
+    padding:60px 40px;
+
+    background-color:#f8f2f8;
+
+    text-align:center ;
+}
+
+.valeurs h2{
+
+    color:purple;
+
+    margin-bottom:10px;
+}
+
+/* BOITES */
+
+.boites-valeurs{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+}
+
+/* UNE VALEUR */
+
+.valeur{
+
+    background-color:white;
+
+    width:250px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.valeur h3{
+
+    color:purple;
+
+    margin-bottom:15px;
+}
+
+/* CHOIX */
+
+.choix{
+
+    padding:60px;
+
+    text-align:center;
+}
+
+.choix h2{
+
+    color:purple;
+
+    margin-bottom:30px;
+}
+
+.choix ul{
+
+    list-style:none;
+}
+
+.choix li{
+
+    margin-bottom:15px;
+
+    font-size:18px;
+}

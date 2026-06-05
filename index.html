@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+    <nav>
+    <a href="index.html" class="active">Accueil</a>
+    <a href="produit.html">Produits</a>
+    <a href="apropos.html">À propos</a>
+    <a href="inscription.html">Inscription</a>
+</nav>
+   <h1> BIENVENUE A KN STYLE </h1> 
+   <p> LES BIJOUX ET VETEMENTS TRADITIONNELS QUI ILLUMINENT VOTRE STYLE</p>
+     
+   <div class="recherche">
+    <input type="text" id="searchInput" placeholder="Rechercher un bijou ou un vetement...">
+    <button onclick="rechercher()">🔍</button>
+   </div>
+   <u>
+    <h2> Découvrez nos collections chics, élégantes et tendances</h2>
+   </u>
+   
+   <p></p>
+   
+  
+ <a href="vetement.html" class="bouton"> Découvrir</a>
+   <div class="video">
+    <video autoplay muted loop width="400">
+        
+    <source src="images/video traditionnelle.MP4" type="video/MP4">
+</video>
+
+ <video autoplay muted loop width="400">
+        
+    <source src="images/video traditionnelle 2.MP4" type="video/MP4">
+    </video>
+
+    <video autoplay muted loop width="400">
+        
+    <source src="images/video traditionnelle.MP4" type="video/MP4">
+</video>
+   </div>
+
+   <section class="hero">
+      <a href="produit.html" class="bouton"> Découvrir</a>
+   <div class="vetement"> 
+   <img src="images/Capture d’écran_2-6-2026_9386_www.bing.com.jpeg" alt="bijoux">
+   </div>
+   </section>
+  
+   <footer>
+    <a href="inscription.html" class="bouton"> 
+     Rejoignez notre communauté KN</a>
+     <br>
+     <br>
+    <P> Inscrivez-vous pour découvrir nos nouvelles collections,nos offres exclusives et les dernières tendances</P>
+   <p class="contact">
+   📱 whatsapp : +237 672 30 74 96 <br>
+    📞Téléphone: +237 6 80 84 97 87
+   </p>
+   <p class="copyright">
+    2026 KN Style - Tous droits réservés. 
+
+   </p>
+</footer>
+
+<script>
+function rechercher() {
+    let recherche = document.getElementById("searchInput").value;
+
+    window.location.href = "produit.html?search=" + encodeURIComponent(recherche);
+
+}
+</script>
+
+
+</body>
+</html>

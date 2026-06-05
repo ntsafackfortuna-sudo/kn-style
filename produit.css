@@ -1,0 +1,104 @@
+nav{
+    text-align: right;
+    color: purple;
+    font-size: 20px;
+}
+
+nav a{
+    text-align: right;
+    
+    font-weight: bold;
+}
+
+ 
+
+nav a:hover{
+    color:#FFD700;
+}
+
+h1{
+    text-align: center;
+    color: purple;
+    font-size: 50px;
+}
+.catalogue{
+    text-align: center;
+    gap: 40px;
+}
+
+.produit{
+    width: 300px;
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.produit img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produit h2{
+    color: #6d3b70;
+}
+
+.produit h3{
+    color: goldenrod;
+}
+
+.produit button{
+    background-color: #6d3b70;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.produit :hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.pagination{
+    text-align:center;
+    margin:50px 0;
+}
+
+.pagination a{
+    display:inline-block;
+    padding:10px 15px;
+    margin:5px;
+    text-decoration:none;
+    border:1px solid #6A0DAD;
+    color:#6A0DAD;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.pagination a:hover{
+    background:#6A0DAD;
+    color:white;
+}
+
+.pagination .active{
+    background:#6A0DAD;
+    color:white;
+}
+
+.btn-retour{
+    padding: 10px 20px;
+    background-color: purple;
+    color: purple;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-retour:hover{
+    background-color: #6d3410;
+}
